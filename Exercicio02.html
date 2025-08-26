@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <link rel="stylesheet" href="Style02.css">
+</head>
+<body>
+    <div>
+    <form action="Resposta02.html" method="get">
+        <div>
+            <label> Nome completo: </label>
+        </div> 
+        <div>
+            <input type="text" required="required" minlength="3" maxlength="80" name="nome" id="nome">
+        </div> 
+        <div>
+            <label> Selecione o curso: </label>
+            <select required="required" name="curso" id="curso">
+                <option value="" disabled selected> * Selecione *</option>
+                <option value="DesenvolvimentoWeb">Desenvolvimento Web</option>
+                <option value="DesenvolvimentoSistemas">Desenvolvimento de Sistemas</option>
+            </select>
+        </div>
+        <div>
+            <label for="data"> Data disponivel para inicio: </label>
+            <div>
+                <input type="date" id="data" name="data" required>                           
+            </div>
+        </div>
+        <div>
+            <label> Conhecimento sobre tipo de tecnologia:</label>
+                <div class="radio-group">
+                    <input type="radio" id="geral" name="conhecimento" value="geral" required>
+                    <label for="geral">Geral</label>
+
+                    <input type="radio" id="especifico" name="conhecimento" value="especifico">
+                    <label for="especifico">Específico</label>           
+                </div>
+        </div>
+        <div>
+            <label for="linguagens"> Interesses: </label>
+            <div>
+                <select name="linguagens" multiple="multiple" id="linguagens">
+                    <option value="HtmlCss"> HTML e CSS</option>
+                    <option value="VB"> Visual Basics</option>
+                    <option value="JavaScript"> JavaScript</option>
+                    <option value="Csharp"> C#</option>
+                    <option value="BancoDados"> Banco de Dados</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <a href="Exercicio01.html" class="btn">1</a>
+            <a href="Resposta.html" class="btn">2</a>
+            <a href="Exercicio02.html" class="btn">3</a>
+            <a href="Resposta02.html" class="btn">4</a>        
+        </div>
+    </form>
+    </div>
+<script src="Script02.js"></script>
+</body>
+</html>

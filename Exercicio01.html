@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <link rel="stylesheet" href="Style01.css">
+</head>
+<body>
+    <div>
+    <form action="resposta.html" method="get">
+        <div>
+            <label> Nome completo: </label>
+        </div> 
+        <div>
+            <input type="text" required="required" minlength="3" maxlength="80" name="nome" id="nome">
+        </div> 
+        <div>
+            <label> Email: </label>
+        </div> 
+        <div>
+            <input type="text" required="required" name="email" id="email">
+        </div> 
+        <div>      
+            <label> Idade: </label>
+        </div> 
+        <div>
+            <input type="number" id="idade" min="14" max="100" required="required" name="idade">
+        </div>
+        <div>
+            <label> Curso: </label>
+            <select required="required" name="curso" id="curso">
+                <option value="" disabled selected> * Selecione *</option>
+                <option value="frontend">Front-End</option>
+                <option value="backend">Back-End</option>
+                <option value="fullstack">Full-Stack</option>
+            </select>
+        </div>
+        <div>
+            <label> Disponibilidade: </label>
+            <div>
+                <input type="radio" id="manha" name="disponibilidade" value="manha" required="required">
+                <label for="manha">Manhã</label>
+                <input type="radio" id="tarde" name="disponibilidade" value="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="noite" name="disponibilidade" value="noite">
+                <label for="noite">Noite</label>                                
+            </div>
+        </div>
+        <div>
+            <label> Deseja receber certificado?</label>
+            <div>
+                <input type="radio" id="sim" name="receberCertificado" value="sim" required="required">
+                <label for="sim"> Sim </label>
+                <input type="radio" id="nao" name="receberCertificado" value="nao">
+                <label for="nao"> Não </label>              
+            </div>
+        </div>
+        <div>
+            <label for="linguagens"> Linguagens que domina: </label>
+            <div>
+                <select name="linguagens" multiple id="linguagens">
+                    <option value="HTML"> HTML</option>
+                    <option value="CSS"> CSS</option>
+                    <option value="JS"> JS</option>
+                    <option value="Csharp"> C#</option>
+                    <option value="SQL"> SQL</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label>Observações</label>
+            <div>
+                <textarea maxlength="300" name="observacoes">  </textarea>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <a href="Exercicio01.html" class="btn">1</a>
+            <a href="Resposta.html" class="btn">2</a>
+            <a href="Exercicio02.html" class="btn">3</a>
+            <a href="Resposta02.html" class="btn">4</a>           
+        </div>
+    </form>
+    </div>
+<script src="Script01.js"></script>
+</body>
+</html>
